@@ -30,6 +30,7 @@ $testing_color_3: rgba(167,199,255,0.50); //blue
 body {
   margin: 0;
   padding: 0;
+  background-color: #1d1d1d;
 }
 
 #intro {
@@ -44,10 +45,6 @@ body {
           animation: fadein 1.2s;
           animation-timing-function: ease-in-out;
   //Image
-  background-image: url('../img/intro.jpg');
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
   color: white;
   height: auto;
   padding: 164px 16px 164px 16px;
@@ -82,8 +79,9 @@ body {
     font-weight: $light;
     font-size: $s;
     line-height: $xm;
-    width: 650px;
+    width: 664px;
     margin: auto;
+    color: #ccc;
     @media ( max-width: $tablet ) {
       font-size: $s;
       width: auto;
@@ -102,7 +100,7 @@ body {
 
 img {
   width: 100%;
-  padding-bottom: $m;
+  padding-bottom: $xl;
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
@@ -113,9 +111,13 @@ img {
           animation: fadein 1.2s;
           animation-timing-function: ease-in-out;
   @media ( max-width: $tablet ) {
-    padding: 0;
+    padding: 0 0 16px 0;
     margin: 0;
   }
+}
+
+.last-img {
+  padding-bottom: 0;
 }
 
 #outro {
