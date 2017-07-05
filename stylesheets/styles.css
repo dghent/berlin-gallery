@@ -32,6 +32,9 @@ body {
     #intro {
       padding: 24px 8px 24px 8px;
       margin-bottom: 4px; } }
+  #intro .berlin-headline {
+    width: 300px;
+    height: 300px; }
   #intro .title {
     font-family: "Proxima Nova Condensed Light", sans-serif;
     font-size: 40px;
