@@ -1,11 +1,5 @@
-
-// Color
-$blue: #0099da;
-$medium_grey: #C1C3C3;
-$green: #417505;
-
 $desktop: 1200px;
-$tablet: 800px;
+$mid: 1024px;
 $phone: 450px;
 
 // 8 pix sizes
@@ -45,50 +39,52 @@ body {
           animation: fadein 1.2s;
           animation-timing-function: ease-in-out;
   //Image
-  color: white;
   height: auto;
   padding: 164px 16px 164px 16px;
   text-align: center;
   @media ( max-width: $desktop ) {
     padding: 64px 16px 64px 16px;
   }
-  @media ( max-width: $tablet ) {
+  @media ( max-width: $mid ) {
     padding: 64px 16px 64px 16px;
     margin-bottom: 4px;
   }
   @media ( max-width: $phone ) {
-    padding: 24px 8px 24px 8px;
-    margin-bottom: 4px;
+    padding-top: $xl;
+    padding-bottom: $xl;
+  }
+  .title {
+    color: #424242;
+    font-family: "Proxima Nova Condensed Light", sans-serif;
+    font-size: $m;
+    font-weight: $light;
+    padding-bottom: 0;
+    @media ( max-width: $mid ) {
+      font-size: $s;
+      width: auto;
+    }
   }
   .berlin-headline {
     width: 300px;
-    height: 300px;
-  }
-  .title {
-    // font-family: "Playfair", serif;
-    // font-family: "Anonomyous Pro", sans-serif;
-    // font-family: "FreightSans Pro Light", sans-serif;
-    // font-family: "Oswald Light", sans-serif;
-    font-family: "Proxima Nova Condensed Light", sans-serif;
-    font-size: $l;
-    font-weight: $light;
-    padding-bottom: $s;
-    @media ( max-width: $tablet ) {
-      font-size: $m;
-      width: auto;
+    height: 242px;
+    padding: 0;
+    @media ( max-width: $mid ) {
+      width: 216px;
+      height: 174px;
     }
   }
   .byline {
     font-family: "Proxima Nova Condensed Light", sans-serif;
     font-weight: $light;
     font-size: $s;
-    line-height: $xm;
-    width: 664px;
+    line-height: $m;
+    width: 504px;
     margin: auto;
-    color: #ccc;
-    @media ( max-width: $tablet ) {
-      font-size: $s;
-      width: auto;
+    color: #A7A7A7;
+    @media ( max-width: $mid ) {
+      font-size: 12px;
+      line-height: 18px;
+      width: 80%;
       padding: 0 24px 0 24px;
     }
   }
@@ -96,8 +92,8 @@ body {
 
 #content {
   padding: $m $xxl $m $xxl;
-  @media ( max-width: $tablet ) {
-    padding: 0;
+  @media ( max-width: $mid ) {
+    padding: 0 $s 0 $s;
     margin: 0;
   }
 }
@@ -114,7 +110,7 @@ img {
        -o-animation: fadein 1.2s; /* Opera < 12.1 */
           animation: fadein 1.2s;
           animation-timing-function: ease-in-out;
-  @media ( max-width: $tablet ) {
+  @media ( max-width: $mid ) {
     padding: 0 0 16px 0;
     margin: 0;
   }
@@ -126,7 +122,7 @@ img {
 
 #outro {
   padding: $m;
-  @media ( max-width: $tablet ) {
+  @media ( max-width: $mid ) {
     padding: 0;
     margin: 0;
   }
